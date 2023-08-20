@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complete responsive cosmetics website design tutorial</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="img/ican.png" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#home" class="logo"> <img src="img/indigena.png" alt=""> </a>
+
+    <form action="" class="search-form">
+        <input type="search" name="" placeholder="busqueda..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
+    </div>
+
+</header>
+
+<!-- navbar section  -->
+
+<nav class="navbar">
+    <div id="close-navbar" class="fas fa-times"></div>
+    <a href="#home">home</a>
+    <a href="#shop">shop</a>
+    <a href="#gallery">gallery</a>
+    <a href="#team">team</a>
+    <a href="#arrivals">arrivals</a>
+    <a href="#blogs">blogs</a>
+</nav>
+
+<!-- navbar section  -->
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="slide active">
+        <div class="content">
+            <img src="img/feria urutu 2018.jpg" alt="">
+            <h3>feria urutu</h3>
+            <span>Esta celebración de tipo folclórica convoca a artistas nacionales e internacionales y afluencia de turistas de todo el país. En URUTÚ, los protagonistas son los indígenas de los diferentes pueblos que habitan el departamento del Guaviare, a través de sus productos tradicionales.</span>
+            <div class="controls">
+                <div class="fas fa-angle-left" onclick="prev()"></div>
+                <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="img/feria urutu 2018.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="content">
+            <img src="img/Cerro Azul.jpg" alt="">
+            <h3>Cerro Azul</h3>
+            <span>Cerro Azul es un yacimiento arqueológico excavado entre 2014 y 2015, que se encuentra a 26 km al occidente de San José del Guaviare y a 5 km al sur de la margen derecha del río Guayabero.</span>
+            <div class="controls">
+                <div class="fas fa-angle-left" onclick="prev()"></div>
+                <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="img/Cerro Azul.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="content">
+            <img src="img/atardecer rio guaviare.jpg" alt="">
+            <h3>atardecer rio guaviare</h3>
+            <span>Atardecer del Río Guaviare en San José del Guaviare, en el departamento del Guaviare, Colombia.</span>
+            <div class="controls">
+                <div class="fas fa-angle-left" onclick="prev()"></div>
+                <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="img/atardecer rio guaviare.jpg" alt="">
+        </div>
+    </div>
+
+</section>
+
+<section class="shop" id="shop">
+
+    <div class="heading">
+        <h1>Productos Destacados</h1>
+        <p>estos son nuestros productos mas vendidos este año</p>
+    </div>
+
+    <div class="swiper products-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="img/producto 08.png" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Balay</p>
+                    <p>Técnica: Cestería</p>
+                    <p>Material: Caña de Warumá</p>
+                    <div class="price">$23.000 <span>$26.000</span></div>
+                    <a href="#" onclick="añadir()" class="btn">añadir al carrito</a>
+                    <script type="text/javascript">
+                    function añadir(){
+                    swal('FELICIDADES','sea añadido al carrito','success');
+                    }
+                  </script>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="img/producto 01.png" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Robamuchachas</p>
+                    <p>Técnica: Cestería</p>
+                    <p>Materia prima: Warumá</p>
+                    <div class="price">$12.000 <span>$15.000</span></div>
+                    <a href="#" onclick="añadir()" class="btn">añadir al carrito</a>
+                    <script type="text/javascript">
+                    function añadir(){
+                    swal('FELICIDADES','sea añadido al carrito','success');
+                    }
+                  </script>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="img/producto 02.png" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p> Manilla Nukak Makú</p>
+                    <p>Técnica: Tejeduría</p>
+                    <p>Material: Fibra de cumare torcida</p>
+                    <div class="price">$6.000 <span>$9.000</span></div>
+                    <a href="#" onclick="añadir()" class="btn">añadir al carrito</a>
+                    <script type="text/javascript">
+                    function añadir(){
+                    swal('FELICIDADES','sea añadido al carrito','success');
+                    }
+                  </script>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="img/producto 03.png" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Fibra cumare torcida</p>
+                    <p>Técnica: Ninguna</p>
+                    <p>Material: Ají 100% Natural</p>
+                    <div class="price">$10.000 <span>$12.000</span></div>
+                    <a href="#" onclick="añadir()" class="btn">añadir al carrito</a>
+                    <script type="text/javascript">
+                    function añadir(){
+                    swal('FELICIDADES','sea añadido al carrito','success');
+                    }
+                  </script>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="img/producto 04.png" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Manilla JIW</p>
+                    <p>Técnica: Tejeduría</p>
+                    <p>Material: Fibra de cumare</p>
+                    <div class="price">$6.000 <span>$9.000</span></div>
+                    <a href="#" onclick="añadir()" class="btn">añadir al carrito</a>
+                    <script type="text/javascript">
+                    function añadir(){
+                    swal('FELICIDADES','sea añadido al carrito','success');
+                    }
+                  </script>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="img/producto 05.png" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Canasto Urutú</p>
+                    <p> Técnica: Cestería</p>
+                    <p>Material: Caña Warumá</p>
+                    <div class="price">$24.000 <span>$27.000</span></div>
+                    <a href="#" onclick="añadir()" class="btn">añadir al carrito</a>
+                    <script type="text/javascript">
+                    function añadir(){
+                    swal('FELICIDADES','sea añadido al carrito','success');
+                    }
+                  </script>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="img/producto 06.png" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Contenedor</p>
+                    <p>Técnica: Tejido Rollo</p>
+                    <p>Material: Fibra de cumare</p>
+                    <div class="price">$18.000 <span>20.000</span></div>
+                    <a href="#" onclick="añadir()" class="btn">añadir al carrito</a>
+                    <script type="text/javascript">
+                    function añadir(){
+                    swal('FELICIDADES','sea añadido al carrito','success');
+                    }
+                  </script>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="img/producto 07.png" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Jarrón</p>
+                    <p>Técnica: Tejido rollo</p>
+                    <p>Material: Fibra de cumare</p>
+                    <div class="price">$38.000 <span>$40.000</span></div>
+                    <a href="#" onclick="añadir()" class="btn">añadir al carrito</a>
+                    <script type="text/javascript">
+                    function añadir(){
+                    swal('FELICIDADES','sea añadido al carrito','success');
+                    }
+                  </script>
+                </div>
+            </div>
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="img/producto 17.png" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Mochila</p>
+                    <p>Técnica: Confección</p>
+                    <p>Material: Corteza de árbol taja-taja</p>
+                    <div class="price">$16.000 <span>$19.000</span></div>
+                    <a href="#" onclick="añadir()" class="btn">añadir al carrito</a>
+                    <script type="text/javascript">
+                    function añadir(){
+                    swal('FELICIDADES','sea añadido al carrito','success');
+                    }
+                  </script>
+                </div>
+            </div>
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="img/producto 18.png" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Manilla Nukak Makú</p>
+                    <p>Técnica: Tejeduría</p>
+                    <p>Material: Fibra de cumare torcida</p>
+                    <div class="price">$8.000 <span>$10.000</span></div>
+                    <a href="#" onclick="añadir()" class="btn">añadir al carrito</a>
+                    <script type="text/javascript">
+                    function añadir(){
+                    swal('FELICIDADES','sea añadido al carrito','success');
+                    }
+                  </script>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+<!-- shop section ends -->
+
+<!-- gallery section starts  -->
+
+<section class="gallery" id="gallery">
+
+    <div class="heading">
+        <h1>nuestra galería</h1>
+        <p>Te tenemos una gran sorpresa estos productos y muchos más de nuestra colección mi maloka mi cultura ahora los podrás adquirir próximamente en nuestra tienda física que va estar ubicada en nuestro resguardo indiguena Panuré en San Jose Del Guaviare.</p>
+    </div>
+
+    <div class="lightbox">
+        <a href="img/artesana indigena.jpg"><img src="img/artesana indigena.jpg" alt=""></a>
+        <a href="img/artesana nukak 01.jpg"><img src="img/artesana nukak 01.jpg" alt=""></a>
+        <a href="img/artesana nukak 02.jpg"><img src="img/artesana nukak 02.jpg" alt=""></a>
+        <a href="img/artesana nukak 03.jpg"><img src="img/artesana nukak 03.jpg" alt=""></a>
+        <a href="img/artesana nukak 04.jpg"><img src="img/artesana nukak 04.jpg" alt=""></a>
+        <a href="img/artesana nukak 05.jpg"><img src="img/artesana nukak 05.jpg" alt=""></a>
+    </div>
+
+</section>
+
+<!-- gallery section ends -->
+
+<!-- team section starts  -->
+
+<section class="team" id="team">
+
+    <div class="heading">
+        <h1>nuestro equipo</h1>
+        <p> es la estrategia para asegurar la conexión ecológica del área, la conservación del patrimonio natural y los beneficios que procura para las poblaciones humanas.</p>
+    </div>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="img/ni¤o indigena.jpg" alt="">
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Cristin Neriman Ranoque Mucutuy</h3>
+                <p>guia turistico</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="img/ni¤o nukak.jpg" alt="">
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3> Tien Noriel Ronoque Mucutuy </h3>
+                <p>ago figuristas de paja</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="img/mujer nukak.jpg" alt="">
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Soleiny Mucutuy</h3>
+                <p>soy artesana</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- team section ends -->
+
+<!-- arrivals section starts  -->
+
+<section class="arrivals" id="arrivals">
+
+    <div class="heading">
+        <h1>los productos recién llegados</h1>
+        <p>aqui estan nuestros nuevos productos de artesania de los guaviares</p>
+    </div>
+
+    <div class="swiper arrivals-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="img/producto 09.png" alt="">
+                </div>
+                <div class="content">
+                    <p>Pantallas</p>
+                    <p>Técnica: Cestería</p>
+                    <p>Material: Fibra Waramá</p>
+                    <div class="price">$32.000 <span>$34.000</span></div>
+                    <a href="#" onclick="añadir()" class="btn">añadir al carrito</a>
+                    <script type="text/javascript">
+                    function añadir(){
+                    swal('FELICIDADES','sea añadido al carrito','success');
+                    }
+                  </script>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="img/producto 10.png" alt="">
+                </div>
+                <div class="content">
+                    <p>Canasto Nukak Makú</p>
+                    <p>Técnica: Trenzado</p>
+                    <p>Material: Bejuco de Yaré</p>
+                    <div class="price">$20.000 <span>$22.000</span></div>
+                    <a href="#" onclick="añadir()" class="btn">añadir al carrito</a>
+                    <script type="text/javascript">
+                    function añadir(){
+                    swal('FELICIDADES','sea añadido al carrito','success');
+                    }
+                  </script>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="img/producto 11.png" alt="">
+                </div>
+                <div class="content">
+                    <p>Contenedor</p>
+                    <p>Técnica: Rollo</p>
+                    <p>Material: Fibra de cumare</p>
+                    <div class="price">$16.000 <span>$19.000</span></div>
+                    <a href="#" onclick="añadir()" class="btn">añadir al carrito</a>
+                    <script type="text/javascript">
+                    function añadir(){
+                    swal('FELICIDADES','sea añadido al carrito','success');
+                    }
+                  </script>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="img/producto 12 -1.png" alt="">
+                </div>
+                <div class="content">
+                    <p>Chinchorro Nukak Makú</p>
+                    <p>Técnica: Tejido</p>
+                    <p>Material: Fibra Moriche Torcida</p>
+                    <div class="price">$60.000 <span>$62.000</span></div>
+                    <a href="#" onclick="añadir()" class="btn">añadir al carrito</a>
+                    <script type="text/javascript">
+                    function añadir(){
+                    swal('FELICIDADES','sea añadido al carrito','success');
+                    }
+                  </script>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="img/producto 14.png" alt="">
+                </div>
+                <div class="content">
+                    <p>Canasto Urutú</p>
+                    <p>Técnica: Cestería</p>
+                    <p>Material: Caña Warumá</p>
+                    <div class="price">$28.000 <span>$30.000</span></div>
+                    <a href="#" onclick="añadir()" class="btn">añadir al carrito</a>
+                    <script type="text/javascript">
+                    function añadir(){
+                    swal('FELICIDADES','sea añadido al carrito','success');
+                    }
+                  </script>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="img/producto 15.png" alt="">
+                </div>
+                <div class="content">
+                    <p>Bolso Missipi</p>
+                    <p>Técnica: Tejeduría</p>
+                    <p>Material: Fibra de Cumare</p>
+                    <div class="price">$23.000 <span>$26.000</span></div>
+                    <a href="#" onclick="añadir()" class="btn">añadir al carrito</a>
+                    <script type="text/javascript">
+                    function añadir(){
+                    swal('FELICIDADES','sea añadido al carrito','success');
+                    }
+                  </script>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="img/producto 13.png" alt="">
+                </div>
+                <div class="content">
+                    <p>Chinchorro JIW</p>
+                    <p>Técnica: Tejido</p>
+                    <p>Material: Fibra de cumare torcida</p>
+                    <div class="price">$60.000 <span>$62.000</span></div>
+                    <a href="#" onclick="añadir()" class="btn">añadir al carrito</a>
+                    <script type="text/javascript">
+                    function añadir(){
+                    swal('FELICIDADES','sea añadido al carrito','success');
+                    }
+                  </script>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="img/producto 16.png" alt="">
+                </div>
+                <div class="content">
+                    <p>Bolso Panuré</p>
+                    <p>Técnica: Tejeduría</p>
+                    <p>Material: Fibra de Cumare, Torcida</p>
+                    <div class="price">$24.000 <span>$27.000</span></div>
+                    <a href="#" onclick="añadir()" class="btn">añadir al carrito</a>
+                    <script type="text/javascript">
+                    function añadir(){
+                    swal('FELICIDADES','sea añadido al carrito','success');
+                    }
+                  </script>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+    
+</section>
+
+<!-- arrivals section ends -->
+
+<!-- reviews section starts  -->
+
+<section class="reviews">
+
+    <div class="swiper reviews-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="images/pic-1.png" alt="">
+                    <div class="info">
+                        <h3>jose</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">son muy buenos los productos son de almirar por ser duraderas y tener y bonito diseño.</p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="images/pic-2.png" alt="">
+                    <div class="info">
+                        <h3>lilian</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">son personas que siguen tradiciones y su cultura que se pasa de generación en generación son personas que siguen adelante.</p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="images/pic-3.png" alt="">
+                    <div class="info">
+                        <h3>edwin</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">opino que un artesano es una persona muy trabajadora y paciente con la elaboración de sus productos artesanales.</p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="images/pic-4.png" alt="">
+                    <div class="info">
+                        <h3>wendy</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">Los artesanos realizan su trabajo a mano o con herramientas manuales, por lo que hay que tener cierta destreza y habilidad para realizar su trabajo.</p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="images/pic-5.png" alt="">
+                    <div class="info">
+                        <h3>miguel</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">segun yo el trabajo de los guaviares artesanos es hacer arte xd con fibra de warma, cumera o moriche torcida, segun io puedes poner : pienso q es un trabajo honrado y q necesita de practica.</p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="images/pic-6.png" alt="">
+                    <div class="info">
+                        <h3>andrea</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">Pienso que es algo hermoso y valioso, por que esta echo con esfuerzo, lleno de historia y cultura en tan solo una pieza.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- reviews section ends  -->
+
+<!-- service section starts  -->
+
+<section class="service">
+
+    <div class="box">
+        <img src="images/service-1.png" alt="">
+        <h3>envío gratis</h3>
+        <p>Por todas tus compras en Colombia a
+            más de 900 municipios</p>
+    </div>
+
+    <div class="box">
+        <img src="images/service-2.png" alt="">
+        <h3>pago seguro</h3>
+        <p>Servicios de Propiedad Industrial - Solicitud con Pago Electrónico</p>
+    </div>
+
+    <div class="box">
+        <img src="images/service-3.png" alt="">
+        <h3>2/4 de apoyo</h3>
+        <p>La recopilación de información es importante, si el posible proveedor necesita mas información</p>
+    </div>
+
+</section>
+
+<!-- blogs section ends -->
+<!-- footer section starts  -->
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>enlaces rápidos</h3>
+            <a class="link" href="#home"> <i class="fas fa-angle-right"></i> inicio</a>
+            <a class="link" href="#shop"> <i class="fas fa-angle-right"></i> comercio</a>
+            <a class="link" href="#gallery"> <i class="fas fa-angle-right"></i> galeria</a>
+            <a class="link" href="#team"> <i class="fas fa-angle-right"></i> equipo</a>
+            <a class="link" href="#arrivals"> <i class="fas fa-angle-right"></i> Llegadas</a>
+            <a class="link" href="#blogs"> <i class="fas fa-angle-right"></i> blogs</a>
+        </div>
+        <div class="box">
+            <h3>enlaces adicionales</h3>
+            <a href="#" class="link"> <i class="fas fa-angle-right"></i> mi pedido </a>
+            <a href="#" class="link"> <i class="fas fa-angle-right"></i> Mi favorito </a>
+            <a href="#" class="link"> <i class="fas fa-angle-right"></i> mi lista de deseos </a>
+            <a href="#" class="link"> <i class="fas fa-angle-right"></i> política privada </a>
+            <a href="#" class="link"> <i class="fas fa-angle-right"></i> condiciones de uso </a>
+        </div>
+        <div class="box">
+            <h3>Datos de contacto</h3>
+            <p> <i class="fas fa-phone"></i> +123-456-7890 </p>
+            <p> <i class="fas fa-phone"></i> +111-222-3333 </p>
+            <p> <i class="fas fa-envelope"></i> goku50499@gmail.com </p>
+            <p> <i class="fas fa-map"></i> colombia, valledupar - 400104 </p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+        <div class="box">
+            <h3>Boletin informativo</h3>
+            <p>suscríbete para recibir las últimas actualizaciones</p>
+            <form action="">
+                <input type="email" name="" placeholder="ingresa tu emeil" id="" class="email">
+                <input type="submit" value="subscribir"onclick="subscribir()" class="btn">
+                <script type="text/javascript">
+                function subscribir(){
+                swal('tu suscripcion fue exitosa','...','success');
+                }
+              </script>
+            </form>
+        </div>
+    </div>
+    <div class="credit">creado por <span>señor. diseñador web</span> | Miguel Angel Parra Martinez </div>
+</section>
+<!-- footer section ends -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link      -->
+<script src="script.js"></script>
+
+<script>
+    lightGallery(document.querySelector('.gallery .lightbox'));
+</script>
+    
+</body>
+</html>
